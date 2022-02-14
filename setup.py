@@ -1,5 +1,5 @@
 import re
-from setuptools import setup, find_packages
+from setuptools import setup
 
 readme = ""
 with open("README.md") as f:
@@ -16,10 +16,12 @@ with open("gateway/__init__.py") as f:
 if not version:
     raise RuntimeError("No version set")
 
+packages = ["fuwa/gateway"]
+
 setup(
     name="fuwa-gateway",
     version=version,
-    packages=find_packages(),
+    packages=packages,
     description="The gateway implementation for the fuwa eco-system",
     long_description=readme,
     long_description_content_type="text/markdown",
