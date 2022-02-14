@@ -1,0 +1,10 @@
+.vscode/
+Lib/
+Scripts/
+discord.log
+pyvenv.cfg
+tests.py
+__pycache__/
+build/
+dist/
+*.egg-info/
