@@ -38,3 +38,8 @@ loop.run_forever()
 ```
 
 You may think this is quite over the top for a gateway handler, however keep in mind, you are looking at the raw gateway library. If you wanted to, you could just use the Fuwa Gateway, however most of the time, you would use one of the other Fuwa packages along side this, such as the `command_framework`. Most of the packages will link into Fuwa Gateway, meaning you won't usually have to create your own event handlers. Also, the soon to come `bundler`, will assist you in creating Fuwa Bots.
+
+### Install
+```bash
+pip install fuwa[gateway]
+```
