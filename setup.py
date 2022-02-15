@@ -10,7 +10,7 @@ with open("requirements.txt") as f:
     requirements = f.read().splitlines()
 
 version = ""
-with open("gateway/__init__.py") as f:
+with open("fuwa/gateway/__init__.py") as f:
     version = re.search(r'^__version__\s*=\s*[\'"]([^\'"]*)[\'"]', f.read(), re.MULTILINE).group(1)
 
 if not version:
