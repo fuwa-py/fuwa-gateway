@@ -73,6 +73,7 @@ class GatewayConnection:
 
         self._reconnect_codes = {
             1000,
+            1006,
             4000,
             4001,
             4002,
