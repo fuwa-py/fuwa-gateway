@@ -7,8 +7,8 @@ The gateway implementation for the fuwa eco-system
 import asyncio
 import logging
 
-from gateway.connection import GatewayConnection
-from gateway.intents import IntentsFlags
+from fuwa.gateway.connection import GatewayConnection
+from fuwa.gateway.intents import IntentsFlags
 
 
 logging.basicConfig(level=logging.INFO)
