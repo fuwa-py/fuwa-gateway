@@ -1,4 +1,4 @@
-__title__ = 'fuwa'
+__title__ = 'fuwa-gateway'
 __author__ = 'justanotherbyte'
 __license__ = 'MIT'
 __copyright__ = 'Copyright 2022-present justanotherbyte'
