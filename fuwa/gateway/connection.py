@@ -71,16 +71,14 @@ class GatewayConnection:
         self.gateway_url: Optional[str] = None
         self.gateway_version: Optional[int] = None
 
-        self._reconnect_codes = {
-            1000,
-            1006,
-            4000,
-            4001,
-            4002,
-            4005,
-            4007,
-            4008,
-            4009
+        self._no_reconnect_codes = {
+            4014,
+            4013,
+            4003,
+            4012,
+            4011,
+            4010,
+            4004,
         } # discord tells us to re-connect on a 4003
         # however this would entail the token being reset while the bot
         # is online, and there's no point re-connecting on this close code
@@ -136,7 +134,7 @@ class GatewayConnection:
                 self._heartbeat.stop()
                 self._heartbeat = None
 
-            if code in self._reconnect_codes:
+            if code not in self._no_reconnect_codes:
                 # if we can handle these close codes
                 # attempt a resume
                 
